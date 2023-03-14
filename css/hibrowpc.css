@@ -1,0 +1,142 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/static/pretendard.css');
+
+/* -------------------- header -------------------- */
+header{
+	width:100%;
+	height:100px;
+	background-color:rgba(245,245,245,0.9);
+	position:fixed;
+	top:0;
+	z-index:999;
+}
+.logo{
+	letter-spacing:3px;
+	position:absolute;
+	left:50%;
+	top:20%;
+}
+.mobile-top{
+	display:none;
+}
+#pc-menu{
+	display:block;
+}
+.pc-top{
+	width:100%;
+	padding:7px 20px;
+	position:absolute;
+	left:0;
+	top:0;
+	display:flex;
+	justify-content:space-between;
+	z-index:1000;
+}
+.top > li{
+	display:inline-block;
+}
+.top > li:hover{
+	border-bottom:1px solid #333;
+}
+.top.right > li:last-child:hover{
+	border-bottom:none;
+}
+.top.left > li{
+	margin-right:10px;
+}
+.top.right > li{
+	margin-left:10px;
+}
+.top > li > a,.top > li > a > i{
+	font-family:'Montserrat';
+	font-size:12px;
+	font-weight:500;
+	color:#333;
+	padding:10px 0px;
+}
+
+#pc-menu > nav{
+	width:100%;
+	position:absolute;
+	left:0;
+	bottom:0;
+	-border:1px solid red;
+}
+#pc-menu #gnb{
+	width:100%;
+	display:flex;
+	justify-content: center;
+}
+#gnb > li{
+	display:inline-block;
+	margin:10px 10px;
+	position:relative;
+	-border:1px solid red;
+}
+#gnb > li > a{
+	font-family:'Montserrat';
+	font-size:15px;
+	font-weight:500;
+	color:#333;
+	padding:10px 10px;
+}
+#gnb #lucky{
+	color:#009933; !important
+}
+.submenu{
+	display:block;
+	background-color:rgba(245,245,245,1);
+	padding:10px;
+	position:absolute;
+	top:50px;
+	left:50%;
+	transform:translateX(-50%);
+	z-index:1500;
+	opacity:0;
+	visibility:hidden;
+	transition:all 0.3s;
+}
+.submenu.on{
+	top:43px;
+	opacity:1;
+	visibility:visible;
+}
+.pc-em{
+	display:block;
+	position:absolute;
+	top:-7px;
+	left:50%;
+	transform:translateX(-50%);
+	border-bottom:7px solid rgba(245,245,245,1);
+	border-left:5px solid transparent;
+	border-right:5px solid transparent;
+}
+.submenu > li{
+	width:140px;
+	padding:0;
+	text-align:left;
+	border-bottom:none;
+	background-color:#fff;
+}
+.submenu > li > a{
+	display:block;
+	color:#333;
+	font-family:'Montserrat';
+	font-size:13px;
+	font-weight:400;
+	padding:10px 15px;
+	transition:all 0.3s;
+}
+.submenu > li:hover > a{
+	color:#fff;
+	background-color:#999;
+	border-radius:10px;
+}
+
+
+#fp-nav ul li a span{
+	width:6px;
+	height:6px;
+	background:#999;
+}

@@ -1,0 +1,337 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="라이프스타일, 캠핑">
+<meta name="keywords" content="HTML,CSS,JavaScript">
+<meta name="author" content="조미주">
+<meta name="format-detection" content="telephone=no">
+<title>HIBROW</title>
+<link rel="stylesheet" href="css/hibrow.css">
+<link rel="stylesheet" media="all and (min-width:950px)" href="css/hibrowpc.css">
+
+<link rel="stylesheet" href="plugin/fullpage.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"/>
+
+
+<link rel="shortcut icon" href="">
+<link rel="apple-touch-icon" href="">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+<script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+<script src="js/hibrow.js"></script>
+
+<script src="plugin/fullpage.js"></script>
+</head>
+
+<body>
+<header>
+	<h1 class="logo">HIBROWMARKET</h1>
+
+	<div class="mobile-top">
+		<p class="mobile-open"><a href="#">
+			<span></span>
+			<span></span>
+			<span></span>
+		</a></p>
+
+		<p class="cart"><a href="#">
+			<span>0</span>
+		</a></p>
+
+		<p class="serch"><a href="#">
+			<span class="serch-btn"></span>
+		</a></p>
+		<div class="serch-box">
+			<input type="text" placeholder="검색어를 입력하세요">
+			<a class="sch-box-btn" href="#"><i class="fas fa-angle-right"></i></a>
+		</div>
+	</div>
+
+	<div id="pc-menu">
+		<div class="pc-top">
+			<ul class="top left">
+				<li><a href="#">BOARD</a></li>
+				<li><a href="#">Q &amp; A</a></li>
+				<li><a href="#">REVIEW</a></li>
+				<li><a href="#">ABOUT HIBROW</a></li>
+			</ul>
+		
+			<ul class="top right">
+				<li><a href="#">LOGIN</a></li>
+				<li><a href="#">JOIN US</a></li>
+				<li><a href="#">CART (0)</a></li>
+				<li><a href="#">ORDER</a></li>
+				<li><a href="#">MYPAGE</a></li>
+				<li><a href="#"><i class="xi-search"></i></a></li>
+			</ul>
+		</div>
+
+		<nav>
+			<ul id="gnb">
+				<li><a href="#">FUNITURE</a>
+					<ul class="submenu"><em class="pc-em"></em>
+						<li><a href="#">SOFA</a></li>
+						<li><a href="#">TABLES</a></li>
+						<li><a href="#">CHAIRS</a></li>
+						<li><a href="#">STORAGE</a></li>
+						<li><a href="#">ACC</a></li>
+					</ul>
+				</li>
+				<li><a href="#">LIFESTYLE</a>
+					<ul class="submenu"><em class="pc-em"></em>
+						<li><a href="#">CAMP</a></li>
+						<li><a href="#">PICNIC</a></li>
+						<li><a href="#">SURF</a></li>
+						<li><a href="#">BIKE</a></li>
+					</ul> 
+				</li>
+				<li><a href="#">STUFFS</a></li>
+				<li><a href="#">APPAREL</a>
+					<ul class="submenu"><em class="pc-em"></em>
+						<li><a href="#">TOPS</a></li>
+						<li><a href="#">HEADWEAR</a></li>
+						<li><a href="#">BAGS</a></li>
+						<li><a href="#">OTHERS</a></li>
+					</ul>
+				</li>
+				<li><a href="#" id="lucky">LUCKY :)</a></li>
+			</ul>
+		</nav>
+	</div><!-- #pc-menu -->
+</header>
+
+<div id="mobile-menu">
+	<div class="mobile-close">
+		<i class="fas fa-times"></i>
+	</div>
+
+	<h2>HIBROWMARKET</h2>
+
+	<ul class="loginbox">
+		<li><a href="#">LOGIN</a></li>
+		<li><a href="#">JOIN US</a></li>
+		<li><a href="#">CART</a></li>
+		<li><a href="#">MYPAGE</a></li>
+	</ul>
+
+	<nav>
+		<div id="gnb-wrap">
+			<ul class="gnb-tabs">
+				<li>CATEGORY<em class="mo-em"></em></li>
+				<li>COMMUNITY<em class="mo-em"></em></li>
+				<li>MYPAGE<em class="mo-em"></em></li>
+			</ul>
+			<div id="gnb">
+				<div class="tablist">
+					<ul class="sub-wrap">
+						<li><a href="#">FUNITURE</a>
+							<span class="fas fa-angle-down"></span>
+							<ul class="submenu">
+								<li><a href="#">- SOFA</a></li>
+								<li><a href="#">- TABLES</a></li>
+								<li><a href="#">- CHAIRS</a></li>
+								<li><a href="#">- STORAGE</a></li>
+								<li><a href="#">- ACC</a></li>
+							</ul>
+						</li>
+						<li><a href="#">LIFESTYLE</a>
+							<span class="fas fa-angle-down"></span>
+							<ul class="submenu">
+								<li><a href="#">- CAMP</a></li>
+								<li><a href="#">- PICNIC</a></li>
+								<li><a href="#">- SURF</a></li>
+								<li><a href="#">- BIKE</a></li>
+							</ul> 
+						</li>
+						<li><a href="#">STUFFS</a></li>
+						<li><a href="#">APPAREL</a>
+							<span class="fas fa-angle-down"></span>
+							<ul class="submenu">
+								<li><a href="#">- TOPS</a></li>
+								<li><a href="#">- HEADWEAR</a></li>
+								<li><a href="#">- BAGS</a></li>
+								<li><a href="#">- OTHERS</a></li>
+							</ul>
+						</li>
+						<li><a href="#" id="lucky">LUCKY :)</a></li>
+					</ul>
+				</div>
+
+				<div class="tablist">
+					<ul class="sub-wrap">
+						<li><a href="#">BOARD</a></li>
+						<li><a href="#">Q &amp; A</a></li>
+						<li><a href="#">REVIEW</a></li>
+						<li><a href="#">ABOUT HIBROW</a></li>
+					</ul>
+				</div>
+
+				<div class="tablist">
+					<ul class="sub-wrap">
+						<li><a href="#">내 정보</a></li>
+						<li><a href="#">주문 내역</a></li>
+						<li><a href="#">관심 상품</a></li>
+						<li><a href="#">게시글</a></li>
+						<li><a href="#">쿠폰 / 적립금 / 예치금</a></li>
+					</ul>
+				</div>
+			</div><!-- #gnb -->
+		</div><!-- #gnb-wrap-->
+	</nav>
+			
+	<div class="cs-info">
+		<h3>CUSTOMER CENTER</h3>
+		<span>031-771-7980</span>
+		<span>
+			<p>MON-FRI</p>  10AM - 6PM<br>
+			<p>LUNCH 12PM</p> - 1PM<br>
+			<p>SAT/SUN/HOLIDAY</p> OFF
+		</span>
+	</div>
+
+	<div class="cs-call">고객센터 전화연결</div>
+
+	<div class="bank-info">
+		<h3>BANK CENTER</h3>
+		<span>
+			<p>KB국민</p> 630337-01-000000<br>
+			<p>예금주</p> 하이브로우컴퍼니(주)
+		</span>	
+	</div>
+</div><!-- #mobile-menu -->
+
+<ul id="menu">
+	<li data-menuanchor="sect1"><a href="#sect1"></a></li>
+	<li data-menuanchor="sect2"><a href="#sect2"></a></li>
+	<li data-menuanchor="sect3"><a href="#sect3"></a></li>
+	<li data-menuanchor="sect4"><a href="#sect4"></a></li>
+	<li data-menuanchor="sect5"><a href="#sect5"></a></li>
+	<li data-menuanchor="sect6"><a href="#sect6"></a></li>
+	<li data-menuanchor="sect7"><a href="#sect7"></a></li>
+</ul>
+
+<div id="fullpage">
+	<div class="section title" data-anchor="sect1">
+		<div class="sect-title">
+			<h2>STORAGE CUBE</h2>
+			<p>하이브로우 박스를 위한 모듈형 스토리지 솔루션</p>
+			<div class="sect-svc"><a href="a">자세히 보기</a></div>
+		</div>
+	</div>
+
+	<div class="section" data-anchor="sect2">
+		<div class="sect-title">
+			<h2>LAWN CHAIR CLASSIC<br>HIBROW ED</h2>
+			<p>미국 플로리다에서 온 아메리칸 클래식 위빙 체어 &lt;론체어&gt;와 하이브로우가 만났습니다.</p>
+			<div class="sect-svc"><a href="a">앉아보러 가기</a></div>
+		</div>
+	</div>
+
+	<div class="section" data-anchor="sect3">
+		<div class="sect-title">
+			<h2>BROTHER HOOD</h2>
+			<p>하이브로우마켓에서만 누릴 수 있는 다양한 혜택의 멤버십. 하이브로우를 가장 잘 즐길 수 있는 방법.</p>
+			<div class="sect-svc"><a href="a">최대 15% 할인 혜택 멤버십 보기</a></div>
+		</div>
+	</div>
+
+	<div class="section" data-anchor="sect4">
+		<div class="sect-title">
+			<h2>MILK BOX FAMILY</h2>
+			<p>하이브로우 시그니처 아이템.<br>오리지널 밀크박스 제품군</p>
+			<div class="sect-svc"><a href="a">밀크박스 라인업 확인하기</a></div>
+		</div>
+	</div>
+
+	<div class="section" data-anchor="sect5">
+		<div class="sect-title">
+			<h2>CARRIER BOX FAMILY</h2>
+			<p>하이브로우를 상징하는 영원한 아이콘.<br>오리지널 캐리어박스 제품군</p>
+			<div class="sect-svc"><a href="a">캐리어박스 라인업 확인하기</a></div>
+		</div>
+	</div>
+
+	<div class="section" data-anchor="sect6">
+		<div class="notice">
+			<h3>NOTICE <a href="#" class="more-btn">MORE</a></h3>
+			<table class="sect6-tbl">
+				<tr>
+					<td><a href="#">하이브로우 멤버십 프로그램</a></td>
+					<td>2022-04-17</td>
+				</tr>
+				<tr>
+					<td><a href="#">하이브로우마켓 셀렉샵 운영 안내</a></td>
+					<td>2022-02-15</td>
+				</tr>
+				<tr>
+					<td><a href="#">해외 사이트 오픈</a></td>
+					<td>2021-09-30</td>
+				</tr>
+				<tr>
+					<td><a href="#">EDITORIAL#1. BROFLIX &amp; CHILL</a></td>
+					<td>2021-02-03</td>
+				</tr>
+			</table>
+		</div>
+		<div class="qna">
+			<h3>Q&amp;A <a href="#" class="more-btn">MORE</a></h3>
+			<table class="sect6-tbl">
+				<tr>
+					<td><a href="#">기타 문의</a></td>
+					<td>2022-12-30</td>
+				</tr>
+				<tr>
+					<td><a href="#">배송 문의</a></td>
+					<td>2022-11-15</td>
+				</tr>
+				<tr>
+					<td><a href="#">제품 문의</a></td>
+					<td>2022-08-07</td>
+				</tr>
+				<tr>
+					<td><a href="#">제품 문의</a></td>
+					<td>2022-07-24</td>
+				</tr>
+			</table>
+		</div>
+	</div><!-- .board -->
+	
+	<div class="section fp-auto-height"  data-anchor="sect7">
+		<footer>
+		<h1 class="footer-logo">HIBROW COMPANY</h1>
+
+		<div class="footer-info">
+			<h3>TEL. 031-771-7777</h3>
+			<p><b>OPEN HOURS</b> 10AM-6PM | LUNCH 12PM-1PM | SAT/SUN/HOLIDAY OFF
+			<p><b>BANK ACCOUNT</b> KB국민 630337-01-004105 <b>예금주</b> 하이브로우컴퍼니(주)</p>
+			<p><b>DERIVERY</b> CJ대한통운 1588-1255
+				<button class="delivery-svc"><a href="#">배송조회</a></button>
+			</p>
+		</div>
+
+		<ul class="sns">
+			<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+			<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+			<li><a href="#"><i class="fab fa-blogger-b"></i></a></li>
+		</ul>
+
+		<ul class="footer-link">
+			<li><a href="#">ABOUT US</a></li>
+			<li><a href="#">GUIDE</a></li>
+			<li><a href="#">AGREEMENT</a></li>
+			<li><a href="#">PRIVACY POLITY</a></li>
+		</ul>
+				
+			<address><b>COMPANY</b> 하이브로우컴퍼니 주식회사 <b>CEO</b> 이세희 (SAE HEE LEE) <b>E-MAIL</b> INFO@HIBROW.CO.KR <b>BUSINESS REG. NO.</b>209-87-00141 <b>MAIL-ORDER NO</b>2022-경기-양평-0209 <button><a href="#">사업자정보확인</a></button>
+		<b>ADDRESS</b> 경기도 양평군 서종면 소나기마을길 30 <b>PRIVACY MANGER</b>김명주 (ANNA KIM)
+		</address>
+			
+			<p class="copyright">DESIGNED BY HIBROW COMPANY <br> Copyright &copy; HIBROW ALL RIGHTS RESERVED.</p>
+		</footer>
+	</div>
+</div>
+<h1 id="scroll"></h1>
+</body>
+</html>
